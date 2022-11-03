@@ -1,5 +1,42 @@
 /* Estilos de la sección Contacto */
+.formcontacto__text{
+    margin-left: 5%;
+}
+
+.formcontacto__layout{
+    display: flex;
+}
+
+.formcontacto__form, .formcontacto--izquierda{
+    width: 50%;
+}
+
 /* img de Contacto */
 .formcontacto__img {
-    max-width: 40%;
+    max-width: 70%;
+    margin-left: 15%;
+}
+
+.formcontacto__input, .formcontacto__textarea{
+    display: block;
+    width: 80%;
+    border-top-right-radius: 5%;
+    margin-bottom: 2%;
+}
+
+.formcontacto__input {
+    height: 10%;
+}
+
+.formcontacto__boton{
+    border: 1px solid #000000;
+    text-align: center;
+    position: relative;
+    left: 32%;
+    padding: 2%;
+    font-size: medium;
+}
+
+.formcontacto__boton:hover {
+    font-size: large;
 }

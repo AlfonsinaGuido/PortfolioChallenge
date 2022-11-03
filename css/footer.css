@@ -1,0 +1,9 @@
+/* Estilos de la sección footer */
+
+.footer__rodapie{
+    text-align: center;
+}
+
+.footer__rodapie:hover{
+    font-size: 1.1rem;
+}

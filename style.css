@@ -5,13 +5,13 @@ en las secciones señaladas */
 
 :root{
     /* Inserta la variable de los otros colores inspeccionando el ejemplo de figma */
-   --cor-de-fundo: #F5F5F5;
+   --cor-de-fondo: #F5F5F5;
    --cor-de-link: #000;
 }
 
 body {
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
+    background-color: var(--cor-de-fondo) ;
     font-family: 'Raleway';
     margin: 0;
     padding: 0;

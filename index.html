@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="css/hobbies.css">
     <link rel="stylesheet" href="css/proyectos.css">
     <link rel="stylesheet" href="css/contacto.css">
-    <link rel="stylesheet" href="css/efectoLibro.css">
+    <link rel="stylesheet" href="css/estilosLibro.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <script src="js/efectoLibro.js" defer></script>
     <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
@@ -27,25 +29,25 @@
 </head>
 
 <body>
+    <!-- Sección del Header  -->
+    <section class="header">
+        <header class="header__main">
+            <img src="assets/vector.png" alt="brillo">
+            <h2 class="header__title">Alfonsina Guido</h2>
+            <h3 class="header__email"><a href="mailto:yesicaguidounla@hotmail.com">yesicaguidounla@hotmail.com</a></h3>
+        </header>
+        <!-- <nav>
+            <ul class="menu__list">
+                <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
+                <li class="menu__list__item"><a href="#skills">Skills</a></li>
+                <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+                <li class="menu__list__item"><a href="#formacion">Formación</a></li>
+                <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
+                <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav> -->
+    </section>
     <div class="todo">
-        <!-- Sección del Menú  -->
-        <section class="menu">
-            <header class="menu__header">
-                <img src="assets/vector.png" alt="brillo">
-                <h3 class="menu__title">Alfonsina Guido</h3>
-            </header>
-            <nav>
-                <ul class="menu__list">
-                    <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                    <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                    <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                    <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                    <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                    <li class="menu__list__item"><a href="#contacto">yesicaguidounla@hotmail.com</a></li>
-                </ul>
-                <li class="menu__list__item__contacto"><a href="#contacto">yesicaguidounla@hotmail.com</a></li>
-            </nav>
-        </section>
 
         <!-- Previous Button -->
         <button id="prev-btn">
@@ -58,7 +60,7 @@
             <div id="p1" class="paper">
                 <div class="front">
                     <div id="f1" class="front-content">
-                        <!-- Sección del Header/Title/Hero -->
+                        <!-- Sección del Title/Hero -->
                         <section class="title">
                             <div class="title__div">
                                 <img class="title__profile" src="assets/profile.png" alt="foto de perfil">
@@ -116,14 +118,6 @@
                 </div>
                 <div class="back">
                     <div id="b2" class="back-content">
-                        <h1>Back 2</h1>
-                    </div>
-                </div>
-            </div>
-            <!-- Paper 3 -->
-            <div id="p3" class="paper">
-                <div class="front">
-                    <div id="f3" class="front-content">
                         <!-- Sección de Skills -->
                         <section class="skills" id="skills">
                             <h3 class="skills__title">Skills</h3>
@@ -194,16 +188,11 @@
                         </section>
                     </div>
                 </div>
-                <div class="back">
-                    <div id="b3" class="back-content">
-                        <h1>Back 3</h1>
-                    </div>
-                </div>
             </div>
-            <!-- Paper 4 -->
-            <div id="p4" class="paper">
+            <!-- Paper 3 -->
+            <div id="p3" class="paper">
                 <div class="front">
-                    <div id="f4" class="front-content">
+                    <div id="f3" class="front-content">
                         <!-- Sección de Hobbies -->
                         <section class="hobbies" id="hobbies">
                             <h3 class="hobbies__title">Hobbies</h3>
@@ -242,15 +231,7 @@
                     </div>
                 </div>
                 <div class="back">
-                    <div id="b4" class="back-content">
-                        <h1>Back 4</h1>
-                    </div>
-                </div>
-            </div>
-            <!-- Paper 5 -->
-            <div id="p5" class="paper">
-                <div class="front">
-                    <div id="f5" class="front-content">
+                    <div id="b3" class="back-content">
                         <!-- Sección de Formación académica -->
                         <section class="academic" id="formacion">
                             <h2 class="academic__title">Formación académica</h2>
@@ -300,62 +281,79 @@
                         </section>
                     </div>
                 </div>
+            </div>
+            <!-- Paper 4 -->
+            <div id="p4" class="paper">
+                <div class="front">
+                    <div id="f4" class="front-content">
+                        <h1>Front 4</h1>
+                    </div>
+                </div>
                 <div class="back">
-                    <div id="b5" class="back-content">
-                        <h1>Back 5</h1>
+                    <div id="b4" class="back-content">
+                        <h2 class="experience__section__title">Proyectos</h2>
+                        <div class="experience__box">
+                            <div class="experience__info-container" <h2 class="experience__title">Encriptador de
+                                texto
+                                </h2>
+                                <h3 class="experience__text">Challenge Oracle </h3>
+                            </div>
+                        </div>
+                        <div class="experience__description">
+                            <!-- Enlace del proyecto en Github y GithubPages -->
+                            <span class="experience__repo"><a
+                                    href="https://github.com/AlfonsinaGuido/Encriptador-de-texto.git"
+                                    target="_blank"><button
+                                        class="experiencia__botao--repo">Repositorio</button></a></span>
+                            <span class="experience__demo"><a
+                                    href="https://alfonsinaguido.github.io/Encriptador-de-texto/"
+                                    target="_blank"><button class="experience__botao--demo">Ver
+                                        demo</button></a></span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Paper 6 -->
-            <div id="p6" class="paper">
-                <div class="front">
-                    <div id="f6" class="front-content">
-                        <!-- Sección de Experiencia Profesional/Proyectos-->
-                        <section class="experience" id="xp">
-                            <h2 class="experience__section__title">Proyectos</h2>
+            <!-- Paper 5 -->
+            <div id="p5" class="paper">
+                <!-- Sección de Experiencia Profesional/Proyectos-->
+                <section class="experience" id="xp">
+                    <div class="front">
+                        <div id="f5" class="front-content">
+                            <!-- Logotipo/captura de pantalla del proyecto -->
+                            <img class="experience__img" src="assets/Encriptador de texto.png"
+                                alt="Encriptador de texto">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div id="b5" class="back-content">
                             <div class="experience__box">
-                                <!-- Logotipo/captura de pantalla del proyecto -->
-                                <img class="experience__img" src="assets/Encriptador de texto.png"
-                                    alt="Encriptador de texto">
-                                <div class="experience__info-container" <h2 class="experience__title">Encriptador de
-                                    texto
-                                    </h2>
-                                    <h3 class="experience__text">Challenge Oracle </h3>
-                                    <div class="experience__description">
-                                        <!-- Enlace del proyecto en Github y GithubPages -->
-                                        <span class="experience__repo"><a
-                                                href="https://github.com/AlfonsinaGuido/Encriptador-de-texto.git"
-                                                target="_blank"><button
-                                                    class="experiencia__botao--repo">Repositorio</button></a></span>
-                                        <span class="experience__demo"><a
-                                                href="https://alfonsinaguido.github.io/Encriptador-de-texto/"
-                                                target="_blank"><button class="experience__botao--demo">Ver
-                                                    demo</button></a></span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="experience__box">
-                                <img class="experience__img" src="assets/JuegoAhorcado.png" alt="Juego del Ahorcado">
                                 <div class="experience__info-container" <h2 class="experience__title">Juego creado con
                                     HTML,
                                     CSS y
                                     JavaScript</h2>
                                     <h3 class="experience__text">Challenge Oracle </h3>
-                                    <div class="experience__description">
-                                        <!-- Enlace del proyecto en Github y GithubPages -->
-                                        <span class="experience__repo"><a
-                                                href="https://github.com/AlfonsinaGuido/Juego-del-Ahorcado.git"
-                                                target="_blank"><button
-                                                    class="experiencia__botao--repo">Repositorio</button></a></span>
-                                        <span class="experience__demo"><a
-                                                href="https://alfonsinaguido.github.io/Juego-del-Ahorcado/"
-                                                target="_blank"><button class="experience__botao--demo">Ver
-                                                    demo</button></a></span>
-                                    </div>
                                 </div>
                             </div>
-                        </section>
+                            <div class="experience__description">
+                                <!-- Enlace del proyecto en Github y GithubPages -->
+                                <span class="experience__repo"><a
+                                        href="https://github.com/AlfonsinaGuido/Juego-del-Ahorcado.git"
+                                        target="_blank"><button
+                                            class="experiencia__botao--repo">Repositorio</button></a></span>
+                                <span class="experience__demo"><a
+                                        href="https://alfonsinaguido.github.io/Juego-del-Ahorcado/" target="_blank"><button
+                                            class="experience__botao--demo">Ver
+                                            demo</button></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Paper 6 -->
+            <div id="p6" class="paper">
+                <div class="front">
+                    <div id="f6" class="front-content">
+                        <img class="experience__img" src="assets/JuegoAhorcado.png" alt="Juego del Ahorcado">
                     </div>
                 </div>
                 <div class="back">
@@ -368,32 +366,7 @@
             <div id="p7" class="paper">
                 <div class="front">
                     <div id="f7" class="front-content">
-                        <!-- Sección de Contacto -->
-                        <section class="formcontacto" id="contacto">
-                            <div class="formcontacto__contacto">
-                                <div class="formcontacto--izquierda">
-                                    <img class="formcontacto__img" src="assets/contacto.png" alt="Avión de papel">
-                                </div>
-                                <div class="formcontacto__text">
-                                    <h2 class="formcontacto__title">Contacto</h2>
-                                    <h3 class="formcontacto__subtext">¿Querés enviarme un mensaje?</h3>
-                                    <h3 class="formcontacto__subtext">Completá el siguiente formulario y me pondré en
-                                        contacto lo
-                                        antes posible.</h3>
-                                    <form class="formcontacto__form" name="form">
-                                        <input class="formcontacto__input" type="text" name="nombre"
-                                            placeholder="Nombre | Empresa">
-                                        <input class="formcontacto__input" type="email" name="email"
-                                            placeholder="E-mail">
-                                        <input class="formcontacto__input" type="text" name="asunto"
-                                            placeholder="Asunto">
-                                        <textarea class="formcontacto__textarea" rows="5" cols="40" id="mensagem"
-                                            name="mensaje" placeholder="Mensaje"></textarea>
-                                        <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </section>
+                        <h1>Front 7</h1>
                     </div>
                 </div>
                 <div class="back">
@@ -408,18 +381,41 @@
         <button id="next-btn">
             <i class="fas fa-arrow-circle-right"></i>
         </button>
-
-        <!-- Sección de Footer -->
-        <section class="footer">
-            <div class="footer__rodapie">
-                <a href="https://alfonsinadvp.web.app/" target="_blank">
-                    <p>&#169; Copyright YAG - 2022</p>
-                </a>
-            </div>
-        </section>
     </div>
+    <!-- Sección de Contacto -->
+    <section class="formcontacto" id="contacto">
+        <div class="formcontacto__contacto">
+            <div class="formcontacto__text">
+                <h2 class="formcontacto__title">Contacto</h2>
+                <h3 class="formcontacto__subtext">¿Querés enviarme un mensaje?</h3>
+                <h3 class="formcontacto__subtext">Completá el siguiente formulario y me pondré en
+                    contacto lo antes posible.</h3>
+            </div>
+            <div class="formcontacto__layout">
+                <div class="formcontacto--izquierda">
+                    <img class="formcontacto__img" src="assets/contacto.png" alt="Avión de papel">
+                </div>
+                <form class="formcontacto__form" name="form">
+                    <input class="formcontacto__input" type="text" name="nombre" placeholder="Nombre | Empresa">
+                    <input class="formcontacto__input" type="email" name="email" placeholder="E-mail">
+                    <input class="formcontacto__input" type="text" name="asunto" placeholder="Asunto">
+                    <textarea class="formcontacto__textarea" rows="10" cols="40" id="mensaje" name="mensaje"
+                        placeholder="Mensaje"></textarea>
+                    <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Sección de Footer -->
+    <section class="footer">
+        <div class="footer__rodapie">
+            <a href="https://alfonsinadvp.web.app/" target="_blank">
+                <p>&#169; Copyright YAG - 2022</p>
+            </a>
+        </div>
+    </section>
+
     <!-- Script del documento JavaScript -->
     <script src="js/validacion.js"></script>
 </body>
-
 </html>
