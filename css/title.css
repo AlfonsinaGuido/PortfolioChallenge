@@ -1,0 +1,6 @@
+/* Estilos de la sección title */
+/* img de perfil */
+.title__profile{
+    border-radius: 50%;
+    max-width: 20%;
+}

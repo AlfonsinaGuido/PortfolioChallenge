@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Hojas de estilo desarrolladas con la metodología BEM (Bloque, Elemento, Modificador) -->
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/formacion.css">
+    <link rel="stylesheet" href="css/sobre-mi.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/hobbies.css">
+    <link rel="stylesheet" href="css/proyectos.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/efectoLibro.css">
+
+    <script src="js/efectoLibro.js" defer></script>
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuente del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title> Mi Portfolio</title>
+</head>
+
+<body>
+    <div class="todo">
+        <!-- Sección del Menú  -->
+        <section class="menu">
+            <header class="menu__header">
+                <img src="assets/vector.png" alt="brillo">
+                <h3 class="menu__title">Alfonsina Guido</h3>
+            </header>
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
+                    <li class="menu__list__item"><a href="#skills">Skills</a></li>
+                    <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+                    <li class="menu__list__item"><a href="#formacion">Formación</a></li>
+                    <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
+                    <li class="menu__list__item"><a href="#contacto">yesicaguidounla@hotmail.com</a></li>
+                </ul>
+                <li class="menu__list__item__contacto"><a href="#contacto">yesicaguidounla@hotmail.com</a></li>
+            </nav>
+        </section>
+
+        <!-- Previous Button -->
+        <button id="prev-btn">
+            <i class="fas fa-arrow-circle-left"></i>
+        </button>
+
+        <!-- Book -->
+        <div id="book" class="book">
+            <!-- Paper 1 -->
+            <div id="p1" class="paper">
+                <div class="front">
+                    <div id="f1" class="front-content">
+                        <!-- Sección del Header/Title/Hero -->
+                        <section class="title">
+                            <div class="title__div">
+                                <img class="title__profile" src="assets/profile.png" alt="foto de perfil">
+                                <div class="title__container">
+                                    <h2 class="title__bio">Hola, mi nombre es Alfonsina Guido y construyo páginas web.
+                                    </h2>
+                                    <h3 class="title__subsection">Full Stack Developer Jr.</h3>
+                                    <ul class="title__network">
+                                        <!-- Enlaces de redes sociales -->
+                                        <li class="title__network__item"><a
+                                                href="https://github.com/AlfonsinaGuido?tab=repositories"
+                                                target="_blank">Github <img src="assets/arrow.png"
+                                                    alt="flecha hacia arriba de izquierda a derecha"></a></li>
+                                        <li class="title__network__item"><a
+                                                href="https://www.linkedin.com/in/alfonsina-guido/"
+                                                target="_blank">Linkedin <img src="assets/arrow.png"
+                                                    alt="flecha hacia arriba de izquierda a derecha"></a></li>
+                                        <li class="title__network__item"><a
+                                                href="https://www.instagram.com/alfonsinaguido/"
+                                                target="_blank">Instagram <img src="assets/arrow.png"
+                                                    alt="flecha hacia arriba de izquierda a derecha"></a></li>
+                                        <li class="title__network__item"><a href="assets/Yesica Alfonsina Guido-CV.pdf"
+                                                target="_blank">CV <img src="assets/arrow.png"
+                                                    alt="flecha hacia arriba de izquierda a derecha"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b1" class="back-content">
+                        <h1>Back 1</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 2 -->
+            <div id="p2" class="paper">
+                <div class="front">
+                    <div id="f2" class="front-content">
+                        <!-- Sección sobre mi -->
+                        <section class="about" id="sobre-mi">
+                            <div class="about__container">
+                                <h3 class="about__title">Sobre mi</h3>
+                                <p class="about__paragraph">Me encanta colaborar y trabajar en equipo. Me propongo
+                                    superarme con cada desafío y alcanzar aportes de calidad que produzcan soluciones
+                                    significativas en la vida de los usuarios</p>
+                                <p class="about__paragraph">Busco un puesto de tiempo completo en desarrollo web, donde
+                                    pueda aplicar mis conocimientos y habilidades para seguir mejorando.</p>
+                                <!-- Firma -->
+                                <img src="assets/signature.png" alt="firma">
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b2" class="back-content">
+                        <h1>Back 2</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 3 -->
+            <div id="p3" class="paper">
+                <div class="front">
+                    <div id="f3" class="front-content">
+                        <!-- Sección de Skills -->
+                        <section class="skills" id="skills">
+                            <h3 class="skills__title">Skills</h3>
+                            <div class="skills__line">
+                                <div class="skills__box">
+                                    <ul>
+                                        <li class="skills__img"><img src="assets/Html.png" alt="HTML"></li>
+                                        <li class="skills__name"> HTML 5</li>
+                                    </ul>
+                                </div>
+
+                                <div class="skills__box">
+                                    <ul>
+                                        <li class="skills__img"><img src="assets/CSS.png" alt="CSS"></li>
+                                        <li class="skills__name">CSS 3</li>
+                                    </ul>
+                                </div>
+
+                                <div class="skills__box">
+                                    <ul>
+                                        <li class="skills__img"><img src="assets/JS.png" alt="JS"></li>
+                                        <li class="skills__name">JavaScript</li>
+                                    </ul>
+                                </div>
+
+                                <div class="skills__box">
+                                    <ul>
+                                        <li class="skills__img"><img src="assets/Angular.png" alt="Angular"></li>
+                                        <li class="skills__name">Angular</li>
+                                    </ul>
+                                </div>
+
+                                <div class="skills__box">
+                                    <ul>
+                                        <li class="skills__img"><img src="assets/NodeJs.png" alt="Node JS"></li>
+                                        <li class="skills__name">Node JS</li>
+                                    </ul>
+                                </div>
+
+                                <div class="skills__box">
+                                    <ul>
+                                        <li class="skills__img"><img src="assets/JAVA.png" alt="JAVA"></li>
+                                        <li class="skills__name">JAVA</li>
+                                    </ul>
+                                </div>
+
+                                <div class="skills__box">
+                                    <ul>
+                                        <li class="skills__img"><img src="assets/MySQL.png" alt="MySQL"></li>
+                                        <li class="skills__name">MySQL</li>
+                                    </ul>
+                                </div>
+                                <div class="skills__box">
+                                    <ul>
+                                        <li class="skills__img"><img src="assets/Perseverancia.png" alt="Perseverancia">
+                                        </li>
+                                        <li class="skills__name">Perseverancia</li>
+                                    </ul>
+                                </div>
+                                <div class="skills__box">
+                                    <ul>
+                                        <li class="skills__img"><img src="assets/Atención al detalle.png"
+                                                alt="Atención al detalle"></li>
+                                        <li class="skills__name">Atención al detalle</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b3" class="back-content">
+                        <h1>Back 3</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 4 -->
+            <div id="p4" class="paper">
+                <div class="front">
+                    <div id="f4" class="front-content">
+                        <!-- Sección de Hobbies -->
+                        <section class="hobbies" id="hobbies">
+                            <h3 class="hobbies__title">Hobbies</h3>
+                            <div class="hobbies__line">
+                                <div class="hobbies__box">
+                                    <ul>
+                                        <li class="hobbies__img"><img src="assets/piano.png" alt="ícono de piano"></li>
+                                        <li class="hobbies__name">Practicar piano</li>
+                                    </ul>
+                                </div>
+
+                                <div class="hobbies__box">
+                                    <ul>
+                                        <li class="hobbies__img"> <img src="assets/avistaje.png"
+                                                alt="ícono de binocular"></li>
+                                        <li class="hobbies__name">Senderismo y avistamiento</li>
+                                    </ul>
+                                </div>
+
+                                <div class="hobbies__box">
+                                    <ul>
+                                        <li class="hobbies__img"> <img src="assets/estudiar.png" alt="ícono de libro">
+                                        </li>
+                                        <li class="hobbies__name">Estudiar</li>
+                                    </ul>
+                                </div>
+
+                                <div class="hobbies__box">
+                                    <ul>
+                                        <li class="hobbies__img"><img src="assets/series.png" alt="ícono de tv"></li>
+                                        <li class="hobbies__name">Ver series y películas</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b4" class="back-content">
+                        <h1>Back 4</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 5 -->
+            <div id="p5" class="paper">
+                <div class="front">
+                    <div id="f5" class="front-content">
+                        <!-- Sección de Formación académica -->
+                        <section class="academic" id="formacion">
+                            <h2 class="academic__title">Formación académica</h2>
+                            <div class="academic__courses">
+                                <div class="academic__courses__box">
+                                    <ul class="academic__courses__list">
+                                        <!-- Logotipo de la institución de formación -->
+                                        <li class="academic__courses__item__img"><img src="assets/UNLa.png"
+                                                alt="logo UNLa">
+                                        </li>
+                                        <li class="academic__courses__item__title">
+                                            <h4>Licenciada en Turismo</h4>
+                                        </li>
+                                        <li class="academic__courses__item__subtitle">
+                                            <p>2012 - UNLa</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="academic__courses__box">
+                                    <ul class="academic__courses__list">
+                                        <!-- Logotipo de la institución de formación -->
+                                        <li class="academic__courses__item__img"><img src="assets/Inti.png"
+                                                alt="logo Inti">
+                                        </li>
+                                        <li class="academic__courses__item__title">
+                                            <h4>Formación en Full Stack Developer</h4>
+                                        </li>
+                                        <li class="academic__courses__item__subtitle">
+                                            <p>2022 - Argentina Programa</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="academic__courses__box">
+                                    <ul class="academic__courses__list">
+                                        <!--Logotipo de la institución de formación -->
+                                        <li class="academic__courses__item__img"><img src="assets\Alura.png"
+                                                alt="logo Alura"></li>
+                                        <li class="academic__courses__item__title">
+                                            <h4>Formación en Full Stack Developer</h4>
+                                        </li>
+                                        <li class="academic__courses__item__subtitle">
+                                            <p>En curso - Alura</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b5" class="back-content">
+                        <h1>Back 5</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 6 -->
+            <div id="p6" class="paper">
+                <div class="front">
+                    <div id="f6" class="front-content">
+                        <!-- Sección de Experiencia Profesional/Proyectos-->
+                        <section class="experience" id="xp">
+                            <h2 class="experience__section__title">Proyectos</h2>
+                            <div class="experience__box">
+                                <!-- Logotipo/captura de pantalla del proyecto -->
+                                <img class="experience__img" src="assets/Encriptador de texto.png"
+                                    alt="Encriptador de texto">
+                                <div class="experience__info-container" <h2 class="experience__title">Encriptador de
+                                    texto
+                                    </h2>
+                                    <h3 class="experience__text">Challenge Oracle </h3>
+                                    <div class="experience__description">
+                                        <!-- Enlace del proyecto en Github y GithubPages -->
+                                        <span class="experience__repo"><a
+                                                href="https://github.com/AlfonsinaGuido/Encriptador-de-texto.git"
+                                                target="_blank"><button
+                                                    class="experiencia__botao--repo">Repositorio</button></a></span>
+                                        <span class="experience__demo"><a
+                                                href="https://alfonsinaguido.github.io/Encriptador-de-texto/"
+                                                target="_blank"><button class="experience__botao--demo">Ver
+                                                    demo</button></a></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience__box">
+                                <img class="experience__img" src="assets/JuegoAhorcado.png" alt="Juego del Ahorcado">
+                                <div class="experience__info-container" <h2 class="experience__title">Juego creado con
+                                    HTML,
+                                    CSS y
+                                    JavaScript</h2>
+                                    <h3 class="experience__text">Challenge Oracle </h3>
+                                    <div class="experience__description">
+                                        <!-- Enlace del proyecto en Github y GithubPages -->
+                                        <span class="experience__repo"><a
+                                                href="https://github.com/AlfonsinaGuido/Juego-del-Ahorcado.git"
+                                                target="_blank"><button
+                                                    class="experiencia__botao--repo">Repositorio</button></a></span>
+                                        <span class="experience__demo"><a
+                                                href="https://alfonsinaguido.github.io/Juego-del-Ahorcado/"
+                                                target="_blank"><button class="experience__botao--demo">Ver
+                                                    demo</button></a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b6" class="back-content">
+                        <h1>Back 6</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 7 -->
+            <div id="p7" class="paper">
+                <div class="front">
+                    <div id="f7" class="front-content">
+                        <!-- Sección de Contacto -->
+                        <section class="formcontacto" id="contacto">
+                            <div class="formcontacto__contacto">
+                                <div class="formcontacto--izquierda">
+                                    <img class="formcontacto__img" src="assets/contacto.png" alt="Avión de papel">
+                                </div>
+                                <div class="formcontacto__text">
+                                    <h2 class="formcontacto__title">Contacto</h2>
+                                    <h3 class="formcontacto__subtext">¿Querés enviarme un mensaje?</h3>
+                                    <h3 class="formcontacto__subtext">Completá el siguiente formulario y me pondré en
+                                        contacto lo
+                                        antes posible.</h3>
+                                    <form class="formcontacto__form" name="form">
+                                        <input class="formcontacto__input" type="text" name="nombre"
+                                            placeholder="Nombre | Empresa">
+                                        <input class="formcontacto__input" type="email" name="email"
+                                            placeholder="E-mail">
+                                        <input class="formcontacto__input" type="text" name="asunto"
+                                            placeholder="Asunto">
+                                        <textarea class="formcontacto__textarea" rows="5" cols="40" id="mensagem"
+                                            name="mensaje" placeholder="Mensaje"></textarea>
+                                        <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b7" class="back-content">
+                        <h1>Back 7</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Next Button -->
+        <button id="next-btn">
+            <i class="fas fa-arrow-circle-right"></i>
+        </button>
+
+        <!-- Sección de Footer -->
+        <section class="footer">
+            <div class="footer__rodapie">
+                <a href="https://alfonsinadvp.web.app/" target="_blank">
+                    <p>&#169; Copyright YAG - 2022</p>
+                </a>
+            </div>
+        </section>
+    </div>
+    <!-- Script del documento JavaScript -->
+    <script src="js/validacion.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+/* Estilos de la sección formación */
+/* logo de cada formación */
+.academic__courses__item__img img{
+    background: #020129;
+    max-width: 10%;
+}
