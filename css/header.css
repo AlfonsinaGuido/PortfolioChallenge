@@ -2,4 +2,11 @@
 .header__main{
     margin-left: 5%;
     margin-top: 2%;
+    font-size: 1.5rem;
+    color: #fab9c9;
+    -webkit-text-stroke: 0.1px #4A205E;
+}
+
+.header__email a{
+    color: #fab9c9;
 }

@@ -1,5 +1,17 @@
 /* Estilos de la sección Hobbies */
+
+.hobbies__title{
+    font-size: 1.5rem;
+    margin: 10%;
+    padding-bottom: 4%;
+
+}
+
+.hobbies__box{
+    margin: 10%;
+}
+
 /* logo de las Hobbies */
  .hobbies__img img {
-    max-width: 3%;
+    max-width: 12%;
 }

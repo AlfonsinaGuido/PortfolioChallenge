@@ -1,5 +1,24 @@
 /* Estilos de la sección sobre mi */
+
+.about__container{
+    font-size: 1.2rem;
+    margin: 10% 10%;
+}
+
+.about__paragraph{
+    padding: 5%;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
 /* imagen de la firma */
 .about__container img {
-    max-width: 10%;
+    max-width: 30%;
+    position: relative;
+    left: 60%;
+}
+
+#b1 img{
+    max-width: 100%;
+    margin-top: 25%;
 }

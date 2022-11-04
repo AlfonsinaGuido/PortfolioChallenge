@@ -2,5 +2,26 @@
 /* img de perfil */
 .title__profile{
     border-radius: 50%;
-    max-width: 20%;
+    border-top: 1px solid #000;
+    max-width: 50%;
+    position: relative;
+    left: 25%;
+    margin-top: 5%;
+}
+
+.title__bio{
+    text-align: justify;
+    margin: 5%;
+}
+
+.title__subsection{
+    font-size: 20px;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-bottom: 8%;
+}
+
+.title__network__item{
+    margin-bottom: 8%;
+    font-weight: bold;
 }

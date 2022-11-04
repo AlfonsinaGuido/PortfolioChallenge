@@ -1,5 +1,26 @@
 /* Estilos de la sección Proyectos */
+
+.experience{
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.experience__section__title{
+    font-size: 1.5rem;
+    margin: 10%;
+}
+
+.experience__box, .experience__description{
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+#f5{
+    display: grid;
+    grid-template-rows: 60% 10%; 
+}
+
 /* img de cada Proyecto */
 .experience__img {
-    max-width: 50%;
+    max-width: 100%;
 }
