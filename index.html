@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/footer.css">
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/efectoLibro.js" defer></script>
     <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -325,12 +326,15 @@
                                 <!-- Enlace del proyecto en Github y GithubPages -->
                                 <span class="experience__repo"><a
                                         href="https://github.com/AlfonsinaGuido/Juego-del-Ahorcado.git"
-                                        target="_blank"><button
-                                            class="experiencia__botao--repo"><h3>Repositorio</h3></button></a></span>
+                                        target="_blank"><button class="experiencia__botao--repo"></button>
+                                            <h3>Repositorio</h3>
+                                        </button></a></span>
                                 <span class="experience__demo"><a
                                         href="https://alfonsinaguido.github.io/Juego-del-Ahorcado/"
-                                        target="_blank"><button class="experience__botao--demo"><h3>Ver
-                                            demo</h3></button></a></span>
+                                        target="_blank"><button class="experience__botao--demo">
+                                            <h3>Ver
+                                                demo</h3>
+                                        </button></a></span>
                             </div>
                         </section>
                     </div>
@@ -347,7 +351,49 @@
                 </div>
                 <div class="back">
                     <div id="b5" class="back-content">
-                        <h1>Back 5</h1>
+                        <div class="experience__box">
+                            <div class="experience__info-container">
+                                <h3 class="experience__title">
+                                    Schernetzki
+                                </h3>
+                                <h4 class="experience__text">Proyecto SPA responsivo en Angular con Bootstrap y Node.js.
+                                    Deploy de app en web host externo.</h4>
+                            </div>
+                        </div>
+                        <div class="experience__description">
+                            <!-- Enlace del proyecto en Github y GithubPages -->
+                            <span class="experience__demo"><a href="https://schernetzki.com/" target="_blank"><button
+                                        class="experience__botao--demo">
+                                        <h3>Ver
+                                            sitio</h3>
+                                    </button></a></span>
+                        </div>
+                        <div class="experience__box">
+                            <div class="experience__info-container">
+                                <h3 class="experience__title">Portfolio Web SPA</h3>
+                                <h4 class="experience__text">Front-end en Angular con Bootstrap, Back-end en JAVA con
+                                    Spring Boot y Data base en MySQL. Deploy en Firebase, Clever Cloud y Heroku.</h4>
+                            </div>
+                        </div>
+                        <div class="experience__description">
+                            <!-- Enlace del proyecto en Github y GithubPages -->
+                            <span class="experience__repo"><a
+                                    href="https://github.com/AlfonsinaGuido/Front-End-Angular.git"
+                                    target="_blank"><button class="experiencia__botao--repo">
+                                        <h3>Repositorio Front-End</h3>
+                                    </button></a></span>
+                            <span class="experience__repo"><a
+                                    href="https://github.com/AlfonsinaGuido/Back-End-SpringBoot.git"
+                                    target="_blank"><button class="experiencia__botao--repo">
+                                        <h3>Repositorio Back-End</h3>
+                                    </button></a></span>
+                            <span class="experience__demo"><a
+                                    href="https://alfonsinadvp.web.app/" target="_blank"><button
+                                        class="experience__botao--demo">
+                                        <h3>Ver
+                                            sitio</h3>
+                                    </button></a></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -355,7 +401,9 @@
             <div id="p6" class="paper">
                 <div class="front">
                     <div id="f6" class="front-content">
-                        <h1>Front 6</h1>
+                        <!-- Logotipo/captura de pantalla del proyecto -->
+                        <img class="experience__img" src="assets/Schernetzki.png" alt="Schernetzki SPA">
+                        <img class="experience__img" src="assets/Portada del portfolio.png" alt="Portfolio SPA">
                     </div>
                 </div>
                 <div class="back">
@@ -398,13 +446,32 @@
                 <div class="formcontacto--izquierda">
                     <img class="formcontacto__img" src="assets/contacto.png" alt="Avión de papel">
                 </div>
-                <form class="formcontacto__form" name="form">
-                    <input class="formcontacto__input" type="text" name="nombre" placeholder="Nombre | Empresa">
-                    <input class="formcontacto__input" type="email" name="email" placeholder="E-mail">
-                    <input class="formcontacto__input" type="text" name="asunto" placeholder="Asunto">
-                    <textarea class="formcontacto__textarea" rows="10" cols="40" id="mensaje" name="mensaje"
-                        placeholder="Mensaje"></textarea>
+                <form class="formcontacto__form" name="form" action="https://formsubmit.co/yesicaguidounla@hotmail.com"
+                    method="POST" onsubmit="showAlert()">
+                    <div class="input-container">
+                        <input class="formcontacto__input" type="text" name="nombre" placeholder="Nombre | Empresa"
+                            required data-tipo="nombre">
+                        <span class="input-message-error">Este campo no es válido</span>
+                    </div>
+                    <div class="input-container">
+                        <input class="formcontacto__input" type="email" name="email" placeholder="E-mail" required
+                            data-tipo="email">
+                        <span class="input-message-error">Este campo no es válido</span>
+                    </div>
+                    <div class="input-container">
+                        <input class="formcontacto__input" type="text" name="asunto" placeholder="Asunto" required
+                            pattern="[\s\S]{10,40}" title="Caracteres: mínimos 10 y máximos 40" data-tipo="asunto">
+                        <span class="input-message-error">Este campo no es válido</span>
+                    </div>
+                    <div class="input-container">
+                        <textarea class="formcontacto__textarea" rows="10" cols="40" id="mensaje" name="mensaje"
+                            placeholder="Mensaje" required minlength="10" maxlength="550"
+                            data-tipo="mensaje"></textarea>
+                        <span class="input-message-error">Este campo no es válido</span>
+                    </div>
                     <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/" />
                 </form>
             </div>
         </div>
@@ -419,8 +486,9 @@
         </div>
     </section>
 
-    <!-- Script del documento JavaScript -->
-    <script src="js/validacion.js"></script>
+    <!-- Script de documentos JavaScript -->
+    <script src="./js/app.js" type="module"></script>
+    <script src="./js/sweetAlert.js"></script>
 </body>
 
 </html>

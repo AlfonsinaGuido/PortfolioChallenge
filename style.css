@@ -7,6 +7,7 @@ en las secciones señaladas */
     /* Inserta la variable de los otros colores inspeccionando el ejemplo de figma */
    --cor-de-fondo: radial-gradient(#F0B462, #E25D4A, #CA3A5D, #4A205E);
    --cor-de-link: #000;
+   --warning-color: #ffffff;
 }
 
 body {
