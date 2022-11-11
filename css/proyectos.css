@@ -10,6 +10,10 @@
     margin: 10%;
 }
 
+.experience__title {
+    text-decoration: underline;
+}
+
 .experience__box, .experience__description{
     line-height: 1.5rem;
     text-align: center;
@@ -17,12 +21,14 @@
 
 #f5{
     display: grid;
-    grid-template-rows: 60% 10%; 
+    grid-template-rows: 60% 10%;
+    margin: 0 2%;
+    
 }
 
 /* img de cada Proyecto */
 .experience__img {
-    max-width: 100%;
+    max-width: 95%;
 }
 
 #b5{
@@ -30,10 +36,17 @@
 }
 
 #f6{
-    margin-top: 10%;
+    margin: 10% 2%;
 }
 
 #f6 :nth-child(2) {
     margin-top: 10%;
 }
 
+.experiencia__botao--repo:hover {
+    background-color: #f895ae;
+}
+
+.experience__botao--demo:hover {
+    background-color: #f895ae;
+}

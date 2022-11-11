@@ -9,9 +9,15 @@
     display: grid;
     grid-template-columns: 50% 50%;
     margin: 10%;
+    margin-left: 0%;
+}
+
+.skills__box{
+    text-align: center;
 }
 
 /* logo de las Skills */
 .skills__img img {
     max-width: 30%;
+    padding-bottom: 3%;
 }
