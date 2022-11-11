@@ -7,13 +7,13 @@ en las secciones señaladas */
     /* Inserta la variable de los otros colores inspeccionando el ejemplo de figma */
    --cor-de-fondo: radial-gradient(#F0B462, #E25D4A, #CA3A5D, #4A205E);
    --cor-de-link: #000;
-   --warning-color: #ffffff;
+   --warning-color: #f6f6f6;
 }
 
 body {
     box-sizing: border-box;
     background: var(--cor-de-fondo) ;
-    font-family: 'Raleway';
+    font-family: 'Sans-Serif';
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -24,6 +24,15 @@ ol, ul,li {
 a{
     text-decoration: none;
     color: var(--cor-de-link);
+}
+
+marquee {
+    background-color: pink;
+    font-family: 'Raleway';
+    font-size: 20px;
+    color: #4A205E;
+    font-weight: bold;
+    -webkit-text-stroke: 0;
 }
 
 /*En este desafío nosostros quisiéramos que ustedes intentaran utilizar la metodología BEM. 
@@ -40,50 +49,50 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menú*/
 
-section.menu{
+/* section.menu{
 
-}
+} */
 
 /*Sección Title*/
 
-section.title{
-    
+section.header{
+    font-family: 'Raleway';
 }
 
 /*Sección About*/
 
-section.about{
+/* section.about{
 
-}
+} */
 
 /*Sección Hobbies*/
 
-section.hobbies{
+/* section.hobbies{
     
-}
+} */
 
-/*Experiencia Académica*/
+/*Formación*/
 
-section.academic{
+/* section.academic{
 
-}
+} */
 
-/*Experiencia*/
+/* Experiencia*/
 
-section.experience{
+/* section.experience{
 
-}
+} */
 
-/*Contacto*/
+/* Contacto */
 
-section.formcontato{
-
+section.formcontacto{
+    font-family: 'Raleway';
 }
 
 /*Footeer*/
 
 section.footer{
-   
+    font-family: 'Raleway';
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?

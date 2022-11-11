@@ -1,20 +1,23 @@
 /* Estilos de la sección Contacto */
+
 .formcontacto__text{
     margin-left: 5%;
 }
 
 .formcontacto__layout{
     display: flex;
+    justify-content: center;
+    margin-left: 6%;
 }
 
 .formcontacto__form, .formcontacto--izquierda{
-    width: 50%;
+    width: 30%;
 }
 
 /* img de Contacto */
 .formcontacto__img {
     max-width: 70%;
-    margin-left: 15%;
+    margin-top: 8%;
 }
 
 .formcontacto__input, .formcontacto__textarea{
@@ -33,7 +36,7 @@
     border: 3px solid #000000;
     text-align: center;
     position: relative;
-    left: 27%;
+    left: 22%;
     padding: 2%;
     font-size: medium;
     font-weight: 600;
@@ -61,4 +64,4 @@
     display: block;
     margin-top: 0.5rem;
     padding-left: 0.5rem;
-  }
+}

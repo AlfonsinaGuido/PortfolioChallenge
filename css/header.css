@@ -14,3 +14,7 @@
 .header__email a{
     color: #fab9c9;
 }
+
+.header__email:hover{
+    transform: scale(1.02);
+}
