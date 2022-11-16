@@ -22,7 +22,7 @@
 #f5{
     display: grid;
     grid-template-rows: 60% 10%;
-    margin: 0 2%;
+    margin: 0% 2%;
     
 }
 
@@ -49,4 +49,11 @@
 
 .experience__botao--demo:hover {
     background-color: #f895ae;
+}
+
+@media (max-width: 1300px){
+    #f5{
+        display: grid;
+        grid-template-rows: 60% 0%;
+    }
 }

@@ -15,6 +15,10 @@
     color: #fab9c9;
 }
 
+.header__email{
+    transition: 200ms;
+}
+
 .header__email:hover{
     transform: scale(1.02);
 }

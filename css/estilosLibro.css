@@ -20,7 +20,6 @@
     top: 0;
     left: 0;
     perspective: 1500px;
-
 }
 
 .front,
@@ -113,4 +112,65 @@ i {
 
 #p7 {
     z-index: 1;
+}
+
+#b6, #f7, #b7{
+    display: none;
+}
+
+/*Mobile*/
+@media (max-width: 1231px) {
+    button{
+        display: none;
+    }
+    .book {  
+        width: 60%;
+        position: static;
+        overflow: scroll;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 2px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "hoja1"
+          "hoja2"
+          "hoja3"
+          "hoja4"
+          "hoja5"
+          "hoja6"
+          "hoja7";
+      }
+      
+      .hoja1 { grid-area: hoja1; }
+      
+      .hoja2 { grid-area: hoja2; }
+      
+      .hoja3 { grid-area: hoja3; }
+      
+      .hoja4 { grid-area: hoja4; }
+      
+      .hoja5 { grid-area: hoja5; }
+      
+      .hoja6 { grid-area: hoja6; }
+      
+      .hoja7 { grid-area: hoja7; }
+    
+    .paper{
+        position: static;
+        display: flex;
+        flex-direction: column;
+    }
+    .front,
+    .back {
+        position: static;
+        border-left: 3px solid #E25D4A;
+    }
+    .front {
+        backface-visibility: visible;
+        margin-bottom: 2px;
+    }
+    .back-content {
+        transform: none;
+    }
 }

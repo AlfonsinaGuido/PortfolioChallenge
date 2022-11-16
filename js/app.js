@@ -1,5 +1,5 @@
 import { valida } from "./validacion.js";
-
+//archivo que ejecuta las funciones para la validación del formulario
 const inputs = document.querySelectorAll("input, textarea");
 
 inputs.forEach((input) => {

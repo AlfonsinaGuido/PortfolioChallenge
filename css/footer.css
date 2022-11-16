@@ -3,6 +3,7 @@
 .footer__rodapie{
     text-align: center;
     font-weight: bold;
+    transition: 300ms;
 }
 
 .footer__rodapie:hover{

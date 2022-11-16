@@ -24,6 +24,7 @@
 .title__network__item{
     margin-bottom: 8%;
     font-weight: bold;
+    transition: 300ms;
 }
 
 .title__network__item:hover{
