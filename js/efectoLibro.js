@@ -21,24 +21,24 @@ let numOfPapers = 7;
 let maxLocation = numOfPapers + 1;
 
 function openBook() {
-    book.style.transform = "translateX(50%)";
-    prevBtn.style.transform = "translateX(-180px)";
-    nextBtn.style.transform = "translateX(180px)";
+        book.style.transform = "translateX(50%)";
+        prevBtn.style.transform = "translateX(-180px)";
+        nextBtn.style.transform = "translateX(180px)";
 }
 
 function closeBook(isAtBeginning) {
-    if(isAtBeginning) {
-        book.style.transform = "translateX(0%)";
-    } else {
-        book.style.transform = "translateX(100%)";
-    }
-    
-    prevBtn.style.transform = "translateX(0px)";
-    nextBtn.style.transform = "translateX(0px)";
+        if(isAtBeginning) {
+            book.style.transform = "translateX(0%)";
+        } else {
+            book.style.transform = "translateX(100%)";
+        }
+        
+        prevBtn.style.transform = "translateX(0px)";
+        nextBtn.style.transform = "translateX(0px)";
 }
 
 function goNextPage() {
-    if(currentLocation < maxLocation) {
+    if(currentLocation < maxLocation && screen.width > 1231) {
         switch(currentLocation) {
             case 1:
                 openBook();
@@ -78,7 +78,7 @@ function goNextPage() {
 }
 
 function goPrevPage() {
-    if(currentLocation > 1) {
+    if(currentLocation > 1 && screen.width > 1231) {
         switch(currentLocation) {
             case 2:
                 closeBook(true);

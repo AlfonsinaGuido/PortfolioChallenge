@@ -26,13 +26,17 @@ a{
     color: var(--cor-de-link);
 }
 
-marquee {
+/* marquee {
     background-color: pink;
     font-family: 'Raleway';
     font-size: 20px;
     color: #4A205E;
     font-weight: bold;
     -webkit-text-stroke: 0;
+} */
+
+marquee {
+    display: none;
 }
 
 /*En este desafío nosostros quisiéramos que ustedes intentaran utilizar la metodología BEM. 

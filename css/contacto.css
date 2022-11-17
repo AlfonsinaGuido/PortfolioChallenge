@@ -40,6 +40,7 @@
     padding: 2%;
     font-size: medium;
     font-weight: 600;
+    transition: 300ms;
 }
 
 .formcontacto__boton:hover {
@@ -64,4 +65,30 @@
     display: block;
     margin-top: 0.5rem;
     padding-left: 0.5rem;
+}
+
+@media (max-width: 830px) and (min-width: 601px) {
+    .formcontacto__boton{
+        left: 2%;
+    }
+}
+
+@media (max-width: 600px) {
+    .formcontacto__text, .formcontacto__input, .formcontacto__textarea{
+        font-size: 0.8rem;
+    }
+    .formcontacto__layout{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 15%;
+    }
+    .formcontacto__form, .formcontacto--izquierda{
+        width: 80%;
+    }
+    .formcontacto__boton{
+        font-size: small;
+    }
+    .formcontacto__boton:hover {
+        font-size: medium;
+    }
 }

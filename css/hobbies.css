@@ -20,3 +20,9 @@
     max-width: 12%;
     padding-bottom: 3%;
 }
+
+@media (max-width: 600px){
+    .hobbies__title{
+        font-size: 1.3rem;
+    }
+}

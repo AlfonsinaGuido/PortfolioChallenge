@@ -15,6 +15,30 @@
     color: #fab9c9;
 }
 
+.header__email{
+    transition: 200ms;
+}
+
 .header__email:hover{
     transform: scale(1.02);
+}
+
+
+@media (max-width: 1100px) {
+    .header__main img{
+        width: 4%;
+     }
+     .header__main{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px){
+    .header__main img{
+        width: 6%;
+     }
+    .header__main{
+        font-size: 1rem;
+        margin-left: 2%;
+    }
 }

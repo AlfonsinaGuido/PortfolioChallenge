@@ -1,8 +1,8 @@
 /* Estilos de la sección Proyectos */
 
 .experience{
-    display: grid;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    display: flex;
+    flex-direction: column;
 }
 
 .experience__section__title{
@@ -20,27 +20,18 @@
 }
 
 #f5{
-    display: grid;
-    grid-template-rows: 60% 10%;
-    margin: 0 2%;
-    
+    margin-top: 20%;
+}
+
+#f5, #f6{
+    display: flex;
+    flex-direction: column;   
 }
 
 /* img de cada Proyecto */
 .experience__img {
     max-width: 95%;
-}
-
-#b5{
-    margin-top: 10%;
-}
-
-#f6{
-    margin: 10% 2%;
-}
-
-#f6 :nth-child(2) {
-    margin-top: 10%;
+    padding: 5%;
 }
 
 .experiencia__botao--repo:hover {
@@ -49,4 +40,16 @@
 
 .experience__botao--demo:hover {
     background-color: #f895ae;
+}
+
+@media (max-width: 1300px){
+    #f5{
+        margin-top: 0%;
+    }
+}
+
+@media (max-width: 600px){
+    .experience__section__title{
+        font-size: 1.3rem;
+    }
 }

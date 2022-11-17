@@ -11,15 +11,33 @@
     text-align: justify;
 }
 
-/* imagen de la firma */
-.about__container img {
+/* div de la firma */
+.firma{
+    display: flex;
+    justify-content: end;
+}
+.firma img {
     max-width: 30%;
-    position: relative;
-    left: 60%;
+}
+
+#b1{
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
 }
 
 #b1 img{
     max-width: 95%;
-    margin-top: 25%;
-    margin-left: 2%;
+}
+
+@media (max-width: 1231px) {
+    .firma img {
+        max-width: 20%;
+    }
+}
+
+@media (max-width: 600px){
+    .about__container{
+        font-size: 1.1rem;
+    }
 }
