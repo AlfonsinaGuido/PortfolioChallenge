@@ -6,36 +6,44 @@
 }
 
 .academic__courses{
-    display: grid;
-    grid-template-rows: 25% 30% 30%;
+    display: flex;
+    flex-direction: column;
 }
 
 .academic__courses__box{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-right: 10%;
-    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+    margin-bottom: 5%;
 }
 
 .academic__courses__item__title, .academic__courses__item__subtitle{
     line-height: 1.5rem;
-    font-size: 1rem;
+    text-align: justify;
 }
 
 /* logo de cada formación */
 .academic__courses__box img{
-    max-width: 50%;
-    vertical-align: bottom;
-    margin-left: 15%;
-    margin-top: 18%;
+    max-width: 30%;
+    height: 10%;
 }
 
 #logoInti{
     background: #020129;
-    margin-top: 30%;
 }
 
 #f4 img{
     max-width: 100%;
     height: 100%;
+}
+
+@media (max-width: 1231px) {
+    
+}
+
+@media (max-width: 600px){
+    .academic__title{
+        font-size: 1.3rem;
+    }
 }

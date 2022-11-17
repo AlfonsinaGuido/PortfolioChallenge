@@ -49,7 +49,6 @@
     width: 100%;
     height: 100%;
     display: block;
-    justify-content: center;
     align-items: center;
 }
 
@@ -118,9 +117,8 @@ i {
     display: none;
 }
 
-/*Mobile*/
 @media (max-width: 1231px) {
-    button{
+    #prev-btn, #next-btn{
         display: none;
     }
     .book {  
@@ -172,5 +170,12 @@ i {
     }
     .back-content {
         transform: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .book {  
+        width: 100%;
+        font-size: 0.8rem !important;
     }
 }
