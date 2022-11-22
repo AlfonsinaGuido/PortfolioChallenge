@@ -1,0 +1,144 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el ejemplo de figma */
+   --cor-de-fondo: radial-gradient(#F0B462, #E25D4A, #CA3A5D, #4A205E);
+   --cor-de-link: #000;
+   --warning-color: #f6f6f6;
+}
+
+body {
+    box-sizing: border-box;
+    background: var(--cor-de-fondo) ;
+    font-family: 'Sans-Serif';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/* marquee {
+    background-color: pink;
+    font-family: 'Raleway';
+    font-size: 20px;
+    color: #4A205E;
+    font-weight: bold;
+    -webkit-text-stroke: 0;
+} */
+
+marquee {
+    display: none;
+}
+
+/*En este desafío nosostros quisiéramos que ustedes intentaran utilizar la metodología BEM. 
+
+Qué es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menú*/
+
+/* section.menu{
+
+} */
+
+/*Sección Title*/
+
+section.header{
+    font-family: 'Raleway';
+}
+
+/*Sección About*/
+
+/* section.about{
+
+} */
+
+/*Sección Hobbies*/
+
+/* section.hobbies{
+    
+} */
+
+/*Formación*/
+
+/* section.academic{
+
+} */
+
+/* Experiencia*/
+
+/* section.experience{
+
+} */
+
+/* Contacto */
+
+section.formcontacto{
+    font-family: 'Raleway';
+}
+
+/*Footeer*/
+
+section.footer{
+    font-family: 'Raleway';
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}

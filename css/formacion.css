@@ -1,0 +1,49 @@
+/* Estilos de la sección formación */
+
+.academic__title{
+    font-size: 1.5rem;
+    margin: 10%;
+}
+
+.academic__courses{
+    display: flex;
+    flex-direction: column;
+}
+
+.academic__courses__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+    margin-bottom: 5%;
+}
+
+.academic__courses__item__title, .academic__courses__item__subtitle{
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+/* logo de cada formación */
+.academic__courses__box img{
+    max-width: 30%;
+    height: 10%;
+}
+
+#logoInti{
+    background: #020129;
+}
+
+#f4 img{
+    max-width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1231px) {
+    
+}
+
+@media (max-width: 600px){
+    .academic__title{
+        font-size: 1.3rem;
+    }
+}

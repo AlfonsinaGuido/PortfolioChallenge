@@ -1,0 +1,29 @@
+/* Estilos de la sección Skills */
+
+.skills__title{
+    font-size: 1.5rem;
+    margin: 10%;
+}
+
+.skills__line{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10%;
+    margin-left: 0%;
+}
+
+.skills__box{
+    text-align: center;
+}
+
+/* logo de las Skills */
+.skills__img img {
+    max-width: 30%;
+    padding-bottom: 3%;
+}
+
+@media (max-width: 600px){
+    .skills__title{
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,181 @@
+.todo {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Book */
+.book {
+    position: relative;
+    width: 30%;
+    height: 90%;
+    transition: transform 0.5s;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+.front,
+.back {
+    background-color: #f1e99e;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid #E25D4A;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center;
+}
+
+.back-content {
+    transform: rotateY(180deg)
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 3%;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: #4A205E;
+}
+
+i {
+    font-size: 50px;
+    color: #f895ae;
+}
+
+/* Paper stack order */
+#p1 {
+    z-index: 7;
+}
+
+#p2 {
+    z-index: 6;
+}
+
+#p3 {
+    z-index: 5;
+}
+
+#p4 {
+    z-index: 4;
+}
+
+#p5 {
+    z-index: 3;
+}
+
+#p6 {
+    z-index: 2;
+}
+
+#p7 {
+    z-index: 1;
+}
+
+#b6, #f7, #b7{
+    display: none;
+}
+
+@media (max-width: 1231px) {
+    #prev-btn, #next-btn{
+        display: none;
+    }
+    .book {  
+        width: 60%;
+        position: static;
+        overflow: scroll;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 2px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "hoja1"
+          "hoja2"
+          "hoja3"
+          "hoja4"
+          "hoja5"
+          "hoja6"
+          "hoja7";
+      }
+      
+      .hoja1 { grid-area: hoja1; }
+      
+      .hoja2 { grid-area: hoja2; }
+      
+      .hoja3 { grid-area: hoja3; }
+      
+      .hoja4 { grid-area: hoja4; }
+      
+      .hoja5 { grid-area: hoja5; }
+      
+      .hoja6 { grid-area: hoja6; }
+      
+      .hoja7 { grid-area: hoja7; }
+    
+    .paper{
+        position: static;
+        display: flex;
+        flex-direction: column;
+    }
+    .front,
+    .back {
+        position: static;
+        border-left: 3px solid #E25D4A;
+    }
+    .front {
+        backface-visibility: visible;
+        margin-bottom: 2px;
+    }
+    .back-content {
+        transform: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .book {  
+        width: 100%;
+        font-size: 0.8rem !important;
+    }
+}

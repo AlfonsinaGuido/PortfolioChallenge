@@ -1,0 +1,43 @@
+/* Estilos de la sección sobre mi */
+
+.about__container{
+    font-size: 1.2rem;
+    margin: 10% 10%;
+}
+
+.about__paragraph{
+    padding: 5%;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+/* div de la firma */
+.firma{
+    display: flex;
+    justify-content: end;
+}
+.firma img {
+    max-width: 30%;
+}
+
+#b1{
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+}
+
+#b1 img{
+    max-width: 95%;
+}
+
+@media (max-width: 1231px) {
+    .firma img {
+        max-width: 20%;
+    }
+}
+
+@media (max-width: 600px){
+    .about__container{
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,20 @@
+/* Estilos de la sección footer */
+
+.footer__rodapie{
+    text-align: center;
+    font-weight: bold;
+    transition: 300ms;
+}
+
+.footer__rodapie:hover{
+    font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+    .footer__rodapie{
+        font-size: 0.8rem;
+    }
+    .footer__rodapie:hover{
+        font-size: 0.9rem;
+    }
+}

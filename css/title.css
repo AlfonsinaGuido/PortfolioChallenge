@@ -1,0 +1,36 @@
+/* Estilos de la sección title */
+/* img de perfil */
+.title__profile{
+    border-radius: 50%;
+    border-top: 1px solid #000;
+    max-width: 40%;
+    position: relative;
+    left: 30%;
+    margin-top: 5%;
+}
+
+.title__bio{
+    text-align: justify;
+    margin: 5%;
+}
+
+.title__subsection{
+    font-size: 20px;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-bottom: 8%;
+}
+
+.title__network__item{
+    margin-bottom: 8%;
+    font-weight: bold;
+    transition: 300ms;
+}
+
+.title__network__item:hover{
+    transform: scale(1.02);
+}
+
+@media (max-width: 1231px) {
+    
+}

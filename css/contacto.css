@@ -1,0 +1,94 @@
+/* Estilos de la sección Contacto */
+
+.formcontacto__text{
+    margin-left: 5%;
+}
+
+.formcontacto__layout{
+    display: flex;
+    justify-content: center;
+    margin-left: 6%;
+}
+
+.formcontacto__form, .formcontacto--izquierda{
+    width: 30%;
+}
+
+/* img de Contacto */
+.formcontacto__img {
+    max-width: 70%;
+    margin-top: 8%;
+}
+
+.formcontacto__input, .formcontacto__textarea{
+    display: block;
+    width: 80%;
+    border-top-right-radius: 5%;
+    margin-bottom: 2%;
+    font-size: 1.1rem;
+}
+
+.formcontacto__input {
+    height: 10%;
+}
+
+.formcontacto__boton{
+    border: 3px solid #000000;
+    text-align: center;
+    position: relative;
+    left: 22%;
+    padding: 2%;
+    font-size: medium;
+    font-weight: 600;
+    transition: 300ms;
+}
+
+.formcontacto__boton:hover {
+    font-size: large;
+}
+
+.input-message-error {
+    display: none;
+}
+
+.input-container--invalid {
+    margin-bottom: 0.5rem;
+}
+  
+.input-container--invalid .input {
+    border: 1px solid var(--warning-color);
+    border-radius: 7px;
+}
+
+.input-container--invalid .input-message-error {
+    color: var(--warning-color);
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+@media (max-width: 830px) and (min-width: 601px) {
+    .formcontacto__boton{
+        left: 2%;
+    }
+}
+
+@media (max-width: 600px) {
+    .formcontacto__text, .formcontacto__input, .formcontacto__textarea{
+        font-size: 0.8rem;
+    }
+    .formcontacto__layout{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 15%;
+    }
+    .formcontacto__form, .formcontacto--izquierda{
+        width: 80%;
+    }
+    .formcontacto__boton{
+        font-size: small;
+    }
+    .formcontacto__boton:hover {
+        font-size: medium;
+    }
+}
